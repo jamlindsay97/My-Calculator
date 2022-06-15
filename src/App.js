@@ -24,9 +24,9 @@ const App = () => {
   return (
     <div className="App">
       <h1>My Calculator</h1>
-      <h2>{input}</h2>
-      <Operators handleClick={handleClick}/>
-      <Numbers handleClick={handleClick}/>
+      <h2 data-testid="display">{input}</h2>
+      <Operators handleClick={handleClick} />
+      <Numbers handleClick={handleClick} />
     </div>
   );
 };
